@@ -63,6 +63,50 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* Navigation Bar Styles */
+.navbar {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.nav-link {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #1772d0;
+  background-color: #f0f0f0;
+}
+
+/* Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
 a {
   color: #1772d0;
   text-decoration: none;
@@ -90,10 +134,13 @@ strong {
 }
 
 h2 {
-  margin: 0;
+  margin: 0 0 15px 0;
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
+  color: #333;
+  border-bottom: 2px solid #1772d0;
+  padding-bottom: 5px;
 }
 
 .papertitle {
@@ -107,6 +154,8 @@ h2 {
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
+  font-weight: 700;
+  color: #333;
 }
 
 .one {
@@ -132,4 +181,63 @@ h2 {
 
 span.highlight {
   background-color: #ffffd0;
+}
+
+/* Section spacing */
+table {
+  margin-bottom: 10px;
+}
+
+/* List styling */
+ul {
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Paragraph spacing */
+p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  color: #666;
+  font-size: 12px;
+}
+
+/* Smooth scroll offset for anchor links */
+:target::before {
+  content: "";
+  display: block;
+  height: 80px;
+  margin-top: -80px;
+  visibility: hidden;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+  .nav-container {
+    gap: 15px;
+  }
+  
+  .nav-link {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  
+  .name {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
 }

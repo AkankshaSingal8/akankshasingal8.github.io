@@ -10,21 +10,38 @@
   </head>
 
   <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#teaching" class="nav-link">Teaching</a>
+        <a href="#honors" class="nav-link">Honors</a>
+        <a href="#leadership" class="nav-link">Leadership</a>
+      </div>
+    </nav>
+
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
       <tbody>
         <tr style="padding:0px">
           <td style="padding:0px">
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <!-- About Section -->
+            <table id="about" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr style="padding:0px">
                   <td style="padding:2.5%;width:63%;vertical-align:middle">
                     <p class="name" style="text-align: center;">
                       Akanksha Singal
                     </p>
-                    <p>I'm a CSE senior at <a href="https://iiitd.ac.in/">Indraprastha Institute of Information Technology Delhi (IIIT-Delhi)</a>, with a passion for robotics, computer vision, deep learning, and safe systems.
+                    <p>I'm a Master's student in at <a href="https://www.ri.cmu.edu/">Carnegie Mellon University's Robotics Institute </a>, where I am advised by Prof. Katia Sycara as a Research Assistant at the Advanced Agent-Robotics Technology Research Lab working on Situational Safety for Embodied Agents and Safe Failure Recovery. 
+                      I am also part of Momentum lab at CMU advised by Prof. Jeffrey Ichnowski focusing on learning-based visual servoing systems for robotic manipulators using stereo cameras.
                     </p>
                     <p>
-                      I've had the opportunity to work on projects like dynamic target tracking using quad-rotors, deep learning models for image segmentation, and visual SLAM for autonomous robots. I've interned at IBM IRL, where I worked on Information Theory-based algorithms for system monitoring and safe systems. Additionally, I have extensive experience with frameworks like PyTorch, TensorFlow, OpenCV, and tools like ROS, Gazebo and Kubernetes.
+                      Previously, I completed my B.Tech in Computer Science at <a href="https://iiitd.ac.in/">IIIT-Delhi</a>, where I worked on projects involving dynamic target tracking using quad-rotors, reinforcement learning for target tracking and visual SLAM for autonomous robots. 
+                      I've also interned at IBM Research, where I developed Information Theory-based algorithms for system monitoring and safe systems.                    </p>
+                    <p>
+                      I have extensive experience with PyTorch, TensorFlow, OpenCV, ROS, Isaac Sim, and Gazebo. My research interests include robotics, computer vision, reinforcement learning, and safe AI systems.
                     </p>
                     <p style="text-align:center">
                       <a href="mailto:akanksha21008@iiitd.ac.in">Email</a> &nbsp;/&nbsp;
@@ -39,69 +56,176 @@
               </tbody>
             </table>
 
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <!-- Research Section -->
+            <table id="research" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr>
                   <td style="padding:20px;width:100%;vertical-align:middle">
                     <h2>Research and Projects</h2>
+                    
                     <p>
-                      <strong>Dynamic Target Tracking:</strong> Implemented deep learning algorithms to reduce training parameters and inference time for target tracking using quad-rotors. (Tech Stack: Python, ROS, TensorFlow, OpenCV)
+                      <strong>Learning-Based Visual Servoing for Robotic Manipulation</strong> (Aug 2025 - Present)<br>
+                      <em>Research Assistant, Momentum Robotics Lab, CMU</em><br>
+                      Developing stereo vision-based visual servoing systems using dual-stream CNN architectures to predict 3D position offsets. Creating synthetic training data in Isaac Sim with dynamic rollout sequences and camera trajectory generation. Implementing weighted loss functions and data augmentation strategies for robust learning-based control of UR robotic arms through ROS integration.
+                      <br><em>Tech Stack: PyTorch, Isaac Sim, ROS, OpenCV, UR Robots</em>
                     </p>
-                    <p>
-                      <strong>Visual SLAM:</strong> Deployed a Direct Stereo Visual SLAM system for autonomous robot localization and mapping. (Tech Stack: ROS, Python, OpenCV)
-                    </p>
-                    <p>
-                      <strong>ML/DL Benchmarking:</strong> Led a team to compare Python ML frameworks by implementing 7 models and evaluating performance metrics. (Tech Stack: Python, PyTorch, TensorFlow)
-                    </p>
-                  </td>
-                </tr>
 
-                <tr>
-                  <td style="padding:20px;width:100%;vertical-align:middle">
-                    <h2>Teaching Assistant Experience</h2>
                     <p>
-                      <strong>CSE222 - Algorithms Design and Analysis:</strong> Undergraduate Teaching Assistant under Prof. Diptapriyo Majumdar.<br>
-                      <strong>CSE231 - Operating Systems:</strong> Undergraduate Teaching Assistant under Prof. Dhruv Kumar.<br>
-                      <strong>CSE232 - Computer Networks:</strong> Undergraduate Teaching Assistant under Prof. Rinku Shah.
+                      <strong>Dynamic Target Tracking Using Quadrotors</strong><br>
+                      <em>IIIT-Delhi Advanced Robotics Research Team</em><br>
+                      Implemented deep learning algorithms including Neural Circuit Policies (NCPs) to reduce training parameters by 90% while maintaining stability guarantees for target tracking. Developed end-to-end kinematic image-based visual servoing controllers for quadrotor control systems.
+                      <br><em>Tech Stack: Python, ROS, TensorFlow, OpenCV</em>
                     </p>
-                  </td>
-                </tr>
 
-                <tr>
-                  <td style="padding:20px;width:100%;vertical-align:middle">
-                    <h2>Honors and Awards</h2>
                     <p>
-                      <ul>
-                        <li>Merit Scholarship: 100% tuition fee waiver in 2nd and 3rd years, 50% in 1st year.</li>
-                        <li>Dean’s List for Academic Excellence 2022-23.</li>
-                        <li>Google Women Engineers Program: Selected among 250 scholars from 30,000 applicants across India.</li>
-                        <li>Summer Undergraduate Research Fellowship Award with cash prize of ₹40,000.</li>
-                      </ul>
+                      <strong>Visual Odometry and Terrain Analysis for Lunar Navigation</strong><br>
+                      <em>NASA Moonranger Project</em><br>
+                      Optimized visual odometry systems for lunar terrain navigation. Developed terrain classification algorithms using point cloud data to identify ground, rocks, craters, and columns. Implemented both heuristic and learning-based approaches including PointNet++ for semantic segmentation of 3D point cloud data.
+                      <br><em>Tech Stack: Python, PointNet++, Point Cloud Processing</em>
                     </p>
-                  </td>
-                </tr>
 
-                <tr>
-                  <td style="padding:20px;width:100%;vertical-align:middle">
-                    <h2>Leadership and Community Work</h2>
                     <p>
-                      <ul>
-                        <li>Coordinator, Astronomy Club IIITD </li>
-                        <li> Events Lead, Women in Tech Club IIITD.</li>
-                        <li>Student Council Member (2023-24) </li>
-                        <li>Well-Being Coordinator.</li>
-                        <li>Mentored junior students under the IIITD Student Mentorship Program and Induction Program.</li>
-                        <li>Community service for 80 hours each at Raise India Foundation, Say Earth NGO, and Bachpan Bachao Foundation.</li>
-                      </ul>
+                      <strong>Visual SLAM for Autonomous Robots</strong><br>
+                      Deployed a Direct Stereo Visual SLAM system for autonomous robot localization and mapping. Implemented bundle adjustment algorithms and debugged epipolar correspondence matching for stereo vision applications.
+                      <br><em>Tech Stack: ROS, Python, OpenCV, SLAM</em>
+                    </p>
+
+                    <p>
+                      <strong>Safe Reinforcement Learning with Lyapunov Methods</strong><br>
+                      Developed BLAC (Barrier-Lyapunov Actor-Critic) and LAC (Lyapunov Actor-Critic) frameworks for safe control systems. Implemented comprehensive interpretability methods including constraint violation analysis and backup controller behavior tracking. Applied to unicycle navigation and simulated car following scenarios.
+                      <br><em>Tech Stack: Python, PyTorch, Control Theory</em>
+                    </p>
+
+                    <p>
+                      <strong>ML/DL Framework Benchmarking</strong><br>
+                      Led a team to compare Python ML frameworks by implementing 7 different models and evaluating performance metrics across PyTorch and TensorFlow.
+                      <br><em>Tech Stack: Python, PyTorch, TensorFlow</em>
                     </p>
                   </td>
                 </tr>
               </tbody>
             </table>
+
+            <!-- Professional Experience Section -->
+            <table id="experience" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <h2>Professional Experience</h2>
+                    
+                    <p>
+                      <strong>Research Assistant</strong> (Aug 2025 - Present)<br>
+                      <em>Momentum Robotics Lab, Carnegie Mellon University</em><br>
+                      Developing learning-based visual servoing systems for robotic manipulators using stereo cameras and dual-stream CNN architectures. Working with Isaac Sim for synthetic data generation and integrating with UR robotic arms through ROS.
+                    </p>
+
+                    <p>
+                      <strong>Research Intern</strong><br>
+                      <em>IBM Research Labs (IRL), India</em><br>
+                      Developed Information Theory-based algorithms for system monitoring and safe systems. Contributed to research that resulted in a U.S. Patent. Worked extensively with safe systems design and monitoring frameworks.
+                    </p>
+
+                    <p>
+                      <strong>Research Assistant</strong><br>
+                      <em>Advanced Robotics Research Team, IIIT-Delhi</em><br>
+                      Worked on quadrotor control systems, implementing deep learning algorithms for dynamic target tracking with 90% reduction in training parameters while maintaining stability guarantees.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Teaching Assistant Experience -->
+            <table id="teaching" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <h2>Teaching Assistant Experience</h2>
+                    <p>
+                      <strong>CSE222 - Algorithm Design and Analysis</strong><br>
+                      Undergraduate Teaching Assistant under Prof. Diptapriyo Majumdar, IIIT-Delhi
+                    </p>
+                    <p>
+                      <strong>CSE231 - Operating Systems</strong><br>
+                      Undergraduate Teaching Assistant under Prof. Dhruv Kumar, IIIT-Delhi
+                    </p>
+                    <p>
+                      <strong>CSE232 - Computer Networks</strong><br>
+                      Undergraduate Teaching Assistant under Prof. Rinku Shah, IIIT-Delhi
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Honors and Awards -->
+            <table id="honors" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <h2>Honors and Awards</h2>
+                    <ul>
+                      <!-- <li><strong>U.S. Patent Holder</strong>: For work on Information Theory-based system monitoring algorithms at IBM Research</li> -->
+                      <li><strong>Merit Scholarship</strong>: 100% tuition fee waiver in 2nd and 3rd and 4th year, 50% in 1st year at IIIT-Delhi</li>
+                      <li>Completed NASA Proposal Writing and Evaluation Program to write a NASA proposal and act as a reviewer for proposal submitted.</li>
+                      <li>Currently NASA part of the NASA Mission Concept Academy</li>
+                      <li>Currently NASA part of the NASA Mission Concept Academy</li>
+                      <li>Currently Perception and Navigation team for CMU NASA Lunabotics Challenge</li>
+                      <li><strong>Dean's List for Academic Excellence</strong> 2022-23, IIIT-Delhi</li>
+                      <li><strong>Google Women Engineers Program</strong>: Selected among 250 scholars from 30,000 applicants across India</li>
+                      <li><strong>Summer Undergraduate Research Fellowship Award</strong></li>
+                      <!-- <li><strong>Academic Excellence</strong>: 9.03/10 CGPA at IIIT-Delhi, 4.0/4.0 GPA at CMU</li> -->
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Leadership and Community Work -->
+            <table id="leadership" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <h2>Leadership and Community Work</h2>
+                    <ul>
+                      <li><strong>Coordinator</strong>, Astronomy Club IIIT-Delhi</li>
+                      <li><strong>Events Lead</strong>, Women in Tech Club IIIT-Delhi</li>
+                      <li><strong>Student Council Member</strong> (2023-24), IIIT-Delhi</li>
+                      <li><strong>Well-Being Coordinator</strong>, IIIT-Delhi</li>
+                      <li><strong>Mentor</strong>, IIIT-Delhi Student Mentorship Program and Induction Program</li>
+                      <li><strong>Community Service</strong>: 80 hours each at Raise India Foundation, Say Earth NGO, and Bachpan Bachao Foundation</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Skills Section -->
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:20px;width:100%;vertical-align:middle">
+                    <h2>Technical Skills</h2>
+                    <p>
+                      <strong>Languages</strong>: Python, C++<br>
+                      <strong>Deep Learning</strong>: PyTorch, TensorFlow, Keras<br>
+                      <strong>Computer Vision</strong>: OpenCV, Point Cloud Processing, PointNet++<br>
+                      <strong>Robotics</strong>: ROS, Isaac Sim, Gazebo, UR Robots<br>
+                      <strong>Tools</strong>: Git, Docker, Kubernetes, Linux<br>
+                      <strong>Other</strong>: NumPy, Pandas, Matplotlib, Scikit-learn
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
           </td>
         </tr>
       </tbody>
     </table>
-    <p>Website template from <a href="https://jonbarron.info/">Jon Barron</a></p>
+    
+    <footer style="text-align: center; padding: 20px;">
+      <p>Website template from <a href="https://jonbarron.info/">Jon Barron</a></p>
+    </footer>
   </body>
 </html>
